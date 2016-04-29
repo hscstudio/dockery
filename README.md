@@ -97,18 +97,10 @@ docker-machine ip
 ```
 will show for example 192.168.99.100
 
-7. Run Your container
+8. Run Your container
 ```
 docker-compose up -d
 ```
 
-8. Open browser, and access Your Yii application
+9. Open browser, and access Your Yii application
 http://192.168.99.100:9000
-
-
-
-
-
-
-
-
