@@ -86,21 +86,36 @@ COPY src/ /var/www/
 
 5. In folder src add your file of Yii2 application, then rename folder web to html
 
-6. Build Your customize container, by run this command in docker terminal 
+
+### Build Environment
+
+1. Build Your customize container, by run this command in docker terminal 
 ```
 docker-compose build --no-cache
 ```
 
-7. Check IP Address of docker
+2. Check IP Address of docker
 ```
 docker-machine ip
 ```
+
 will show for example 192.168.99.100
 
-8. Run Your container
+
+### Run Environment
+
+1. Run Your container
 ```
 docker-compose up -d
 ```
 
-9. Open browser, and access Your Yii application
+2. Open browser, and access Your Yii application
 http://192.168.99.100:9000
+
+
+
+
+
+
+
+
