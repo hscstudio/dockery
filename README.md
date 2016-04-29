@@ -5,8 +5,8 @@ Apache + PHP 7 + MySQL
 ## Step by Step
 
 ### Install Docker
-1. Install docker, follow guide here http://docker.com
-2. Firstly, You should read knowledge about docker
+-1. Install docker, follow guide here http://docker.com
+-2. Firstly, You should read knowledge about docker
 
 You should know about 
 - what is docker?
@@ -15,16 +15,16 @@ You should know about
 - commonly command in docker.
 
 ### Prepare Environment
-1. Create folder for docker project
+-1. Create folder for docker project
 
 for example:
   - docker
 
-2. Create folder src in folder docker project that will contain your script of php application
+-2. Create folder src in folder docker project that will contain your script of php application
   + docker
 	- src
 	
-3. Create a file docker-compose.yml
+-3. Create a file docker-compose.yml
 ```
 php:
   build: .
@@ -53,7 +53,7 @@ data:
 This file will create 3 container php, mysql, and data
 base on this https://hub.docker.com/_/php/
 	
-4. Create "Dockerfile" contain
+-4. Create "Dockerfile" contain
 ```
 FROM php:7-apache
 RUN apt-get update
@@ -84,17 +84,17 @@ RUN apt-get update && apt-get install -y \
 COPY src/ /var/www/
 ```
 
-5. In folder src add your file of Yii2 application, then rename folder web to html
+-5. In folder src add your file of Yii2 application, then rename folder web to html
 
 
 ### Build Environment
 
-1. Build Your customize container, by run this command in docker terminal 
+-1. Build Your customize container, by run this command in docker terminal 
 ```
 docker-compose build --no-cache
 ```
 
-2. Check IP Address of docker
+-2. Check IP Address of docker
 ```
 docker-machine ip
 ```
@@ -104,18 +104,10 @@ will show for example 192.168.99.100
 
 ### Run Environment
 
-1. Run Your container
+-1. Run Your container
 ```
 docker-compose up -d
 ```
 
-2. Open browser, and access Your Yii application
+-2. Open browser, and access Your Yii application
 http://192.168.99.100:9000
-
-
-
-
-
-
-
-
